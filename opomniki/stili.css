@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+
 }
 
 glava, noga {
@@ -60,6 +61,7 @@ telo {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity:0.85;
 }
 
 #uporabniskiObrazec {

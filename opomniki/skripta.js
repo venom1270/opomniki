@@ -1,6 +1,5 @@
 window.addEventListener('load', function() {
 	//stran nalozena
-		
 	//Posodobi opomnike
 	var posodobiOpomnike = function() {
 		var opomniki = document.querySelectorAll(".opomnik");
@@ -16,5 +15,13 @@ window.addEventListener('load', function() {
 		}
 	}
 	setInterval(posodobiOpomnike, 1000);
+	
+	var klik = function(event) {
+		var ime = document.getElementById("uporabnisko_ime").value;
+		document.getElementById("uporabnik").innerHTML = ime;
+		document.querySelector(".pokrivalo").style.visibility = "hidden";
+	}
+	
+	document.querySelector("#prijavniGumb").addEventListener("click", klik);
 	
 });
